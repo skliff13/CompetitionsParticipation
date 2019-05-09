@@ -20,4 +20,9 @@ The challenge was dedicated to the analysis of 3D Computed Tomography (CT) image
 Prior to running the scripts, the datasets provided by the organizers must be downloaded. 
 Additionally, one should download the addotional version of lungs masks 
 obtained via segmentation-through-registration scheme ([link](https://drive.google.com/file/d/1DKPcSQLZ-Ff7Xp2fSnc46O9cqLM24aV3/view?usp=sharing)).
-For short description of the additional segmentation method see [this PDF](http://ceur-ws.org/Vol-1866/paper_146.pdf).
+For short description of the additional segmentation method see [1]
+
+### References
+
+[1] Liauchuk, V., Kovalev, V.: ImageCLEF 2017: Supervoxels and co-occurrence for
+tuberculosis CT image classification. In: CLEF2017 Working Notes. CEUR Workshop Proceedings, Dublin, Ireland, CEUR-WS.org <http://ceur-ws.org> (September 11-14 2017) (http://ceur-ws.org/Vol-1866/paper_146.pdf).
