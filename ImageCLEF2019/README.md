@@ -1,11 +1,13 @@
 # ImageCLEF2019
 
+(REPOSITORY UNDER CONSTRUCTION)
+
 The repository contains scripts used upon participation in ImageCLEFtuberculosis 2019 challenge by UIIP_BioMed group.
 The challenge was dedicated to the analysis of 3D Computed Tomography (CT) image data of tuberculosis (TB) patients.
 
 * ImageCLEFtuberculosis page: https://www.imageclef.org/2019/medical/tuberculosis/
-* CT Report generation subtask: https://www.crowdai.org/challenges/imageclef-2019-tuberculosis-ct-report
-* TB Severity scoring subtask: https://www.crowdai.org/challenges/imageclef-2019-tuberculosis-severity-scoring
+* CT Report generation subtask (CTR): https://www.crowdai.org/challenges/imageclef-2019-tuberculosis-ct-report
+* TB Severity scoring subtask (SVR): https://www.crowdai.org/challenges/imageclef-2019-tuberculosis-severity-scoring
 
 ### Structure
 
