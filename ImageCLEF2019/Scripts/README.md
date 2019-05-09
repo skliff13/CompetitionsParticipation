@@ -27,7 +27,7 @@ The examples of X, Y and Z projections for left lung of CTR_TRN_001 are shown be
 ![Alt text](figs/CTR_TRN_001_left_y_proj_mean_max_std.png?raw=true "Y projection")
 ![Alt text](figs/CTR_TRN_001_left_z_proj_mean_max_std.png?raw=true "Z projection")
 
-### 2. Training Convolutional Neural Net (CNN) for binary lung classification.
+### 2. Training Convolutional Neural Net (CNN) for binary lung classification
 
 Here, a CNN is trained to recognize a 2D lung projection image as either healthy ("normal") or affected by TB ("abnormal"). 
 The ground truth information for each lung is given in `CTR_LeftLungAffected` and `CTR_RightLungAffected` metadata fields.
@@ -36,4 +36,14 @@ Network training process is launched with [go_c_train_lung_binary.py](go_c_train
 
 The network model was trained for over 120 epochs. Accuracy and Loss plots are shown below. "Normal"/"abnormal" prediction on the validation subset resulted in 0.865 AUC value. 
 ![Alt text](figs/go_c_plots_min_val_loss_0.3176.png?raw=true "Accuracy and Loss plots")
+
+### 3. Training CNNs for detection of Caverns and LungCapacityDecrease
+
+All other labels (`LungCapacityDecrease`, `Calcification`, `Pleurisy` and `Caverns`) are specified at CT-level, without  information about the specific lung (left/right/both) having aech label. 
+CNNs were used to detect `LungCapacityDecrease` and `Caverns`.
+In this case, the input for the CNN is composed of projections of two lungs. 
+Weights of the convolutional layers were initialized with the corresponding weights of the CNN previously trained for "normal"/"abnormal" classification.
+Training process is lauched with [go_d_train_ct_report_binary.py](go_d_train_ct_report_binary.py) script.
+Network for `LungCapacityDecrease` was trained for 50 epochs (validation AUC = 0.832), network for `Caverns` was trained for 120 epochs (validation AUC = 0.809).
+
 
