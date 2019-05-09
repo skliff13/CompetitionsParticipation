@@ -54,4 +54,5 @@ Network for `LungCapacityDecrease` was trained for 50 epochs (validation AUC = 0
 Scores for prediction of `Calcification` were calculated as mean intensity value of `v1.2` projections which reflects the number of voxels exceeding 1000 HU threshold (see [aux_explore_calcifications.py](aux_explore_calcifications.py)).
 Evaluation on the training subset resulted in 0.719 AUC value. 
 
-Scores for detection of `Pleurisy` were calculated as difference between the volumes of lungs segmented via two different approaches: default and registration-based. See [aux_test_pleurisy.py](aux_test_pleurisy.py) script.
+Scores for detection of `Pleurisy` were calculated as difference between the volumes of lungs segmented via two different approaches: default and registration-based (see [aux_test_pleurisy.py](aux_test_pleurisy.py)). 
+Evaluation on the development dataset resulted in 0.776 AUC.
