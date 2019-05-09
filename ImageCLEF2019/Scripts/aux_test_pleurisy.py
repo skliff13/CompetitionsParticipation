@@ -6,7 +6,7 @@ from sklearn.metrics import roc_auc_score
 
 
 def main():
-    # calc_diffs()
+    calc_diffs()
     calc_diffs_for_test()
 
     df = pd.read_csv('../data/ID_SegmDiff_Pleurisy.csv')
