@@ -19,5 +19,5 @@ The challenge was dedicated to the analysis of 3D Computed Tomography (CT) image
 
 Prior to running the scripts, the datasets provided by the organizers must be downloaded. 
 Additionally, one should download the addotional version of lungs masks 
-obtained via segmentation-through-registration scheme ([link]()).
-For short description of the additional segmentation method see [this PDF]().
+obtained via segmentation-through-registration scheme ([link](https://drive.google.com/file/d/1DKPcSQLZ-Ff7Xp2fSnc46O9cqLM24aV3/view?usp=sharing)).
+For short description of the additional segmentation method see [this PDF](http://ceur-ws.org/Vol-1866/paper_146.pdf).
