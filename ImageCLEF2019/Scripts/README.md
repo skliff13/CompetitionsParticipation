@@ -61,7 +61,7 @@ Evaluation on the training subset resulted in 0.719 AUC value.
 Scores for detection of `Pleurisy` were calculated as difference between the volumes of lungs segmented via two different approaches: default and registration-based (see [aux_test_pleurisy.py](aux_test_pleurisy.py)). 
 Evaluation on the development (train + val) dataset resulted in 0.776 AUC.
 
-### 5. Predicting the Test dataset
+### 5. Predicting the Test dataset (CTR subtask)
 
 For evaluation of all the algorithms on the test CT cases, `CtPredictor3` class was used (see [ct_predictor_3.py](ct_predictor_3.py)). 
 `CtPredictor3` inherits `CtPredictor2` and `CtPredictor` classes which were used for non-final CTR subtask submissions.
@@ -74,8 +74,14 @@ CTR_Calcification: 0.765306
 CTR_Caverns: 0.879167
 CTR_Pleurisy: 0.823529
 CTR_LungCapacityDecrease: 0.855882
-Mean AUC: 0.864430```
+Mean AUC: 0.864430 
+```
 
+### 6. Training CNN for TB Severity scoring (SVR subtask)
+
+The CNN for SVR subtask was trained in a way similar to the cases with `LungCapacityDecrease` and `Caverns` (see [go_d_train_svr.py](go_d_train_svr.py)).
+In this case, transfer learning considered transferring weights for all layers, not only convolutional.
+Training for "HIGH"/"LOW" severity classification took 60 epochs.
 
 
 
