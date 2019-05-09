@@ -67,7 +67,8 @@ For evaluation of all the algorithms on the test CT cases, `CtPredictor3` class 
 `CtPredictor3` inherits `CtPredictor2` and `CtPredictor` classes which were used for non-final CTR subtask submissions.
 Evaluation on the validation and test datasets is done with [go_e_predict_validation_set.py](go_e_predict_validation_set.py) and [go_f_predict_test_set.py](go_f_predict_test_set.py).
 
-The final evaluation on the validation subset gave the following results:
+The final evaluation on the validation subset gave the following AUC values:
+
 ```CTR_LeftLungAffected: 0.906173
 CTR_RightLungAffected: 0.956522
 CTR_Calcification: 0.765306
@@ -82,6 +83,18 @@ Mean AUC: 0.864430
 The CNN for SVR subtask was trained in a way similar to the cases with `LungCapacityDecrease` and `Caverns` (see [go_d_train_svr.py](go_d_train_svr.py)).
 In this case, transfer learning considered transferring weights for all layers, not only convolutional.
 Training for "HIGH"/"LOW" severity classification took 60 epochs.
+The corresponding plots shown below.
+Evaluation on the validation subset resulted in 0.768 AUC value.
+
+![Alt text](figs/go_SVR_min_val_loss_0.5596.png?raw=true "Training for HIGH/LOW Severity")
+
+### 7. TB Seveity classification
+
+The final prediction of "HIGH"/"LOW" TB severity was performed using a conventional classifier trained on the CNN outputs and along with the available metadata. Two runs were submitted for the SVR subtask. 
+The first run used all the available metadata (`md_*` data fields), the second run used only `md_DrugResistance`, `md_HigherEducation`, `md_ExPrisoner` and `md_Alcoholic`.
+See [go_h_train_svr_prediction.py](go_h_train_svr_prediction.py) for details.
+
+Evaluation on the validation subset demontrated slightly better results for the second approach than for the first one (0.876 vs 0.844 AUC).
 
 
 
