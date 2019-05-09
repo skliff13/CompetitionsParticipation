@@ -48,8 +48,8 @@ Weights of the convolutional layers were initialized with the corresponding weig
 Training process is lauched with [go_d_train_ct_report_binary.py](go_d_train_ct_report_binary.py) script.
 Network for `LungCapacityDecrease` was trained for 50 epochs (validation AUC = 0.832), network for `Caverns` was trained for 120 epochs (validation AUC = 0.809).
 
-![Alt text](figs/go_d_lcd_plots_min_val_loss_0.4834.png "Lung Capacity Decrease")
-![Alt text](figs/go_d_caverns_plots_min_val_loss_0.5083.png "Caverns")
+![Alt text](figs/go_d_lcd_min_val_loss_0.4834.png "Lung Capacity Decrease")
+![Alt text](figs/go_d_caverns_min_val_loss_0.5083.png "Caverns")
 
 ### 4. Assessing scores for Calcification and Pleurisy
 
