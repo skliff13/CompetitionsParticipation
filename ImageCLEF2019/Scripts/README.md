@@ -5,8 +5,6 @@ Running the codes requires step-by-step manual control.
 
 The key steps are described below.
 
-(*Page under construction*)
-
 ### 1. Generating CT projections
 
 The key point of the proposed approach is converting 3D CT scans into 2D projections. 
