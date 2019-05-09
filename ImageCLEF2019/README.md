@@ -1,6 +1,6 @@
 # ImageCLEF2019
 
-(REPOSITORY UNDER CONSTRUCTION)
+(*REPOSITORY UNDER CONSTRUCTION*)
 
 The repository contains scripts used upon participation in ImageCLEFtuberculosis 2019 challenge by UIIP_BioMed group.
 The challenge was dedicated to the analysis of 3D Computed Tomography (CT) image data of tuberculosis (TB) patients.
