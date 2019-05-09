@@ -34,18 +34,22 @@ The ground truth information for each lung is given in `CTR_LeftLungAffected` an
 Splitting development data into training and validation subsets is done by [go_b_train_val_split.py](go_b_train_val_split.py).
 Network training process is launched with [go_c_train_lung_binary.py](go_c_train_lung_binary.py).
 
-The network model was trained for over 120 epochs. Accuracy and Loss plots are shown below. "Normal"/"abnormal" prediction on the validation subset resulted in 0.865 AUC value. 
+The network model was trained for over 120 epochs using `v1.0` lung projections.
+Accuracy and Loss plots are shown below. "Normal"/"abnormal" prediction on the validation subset resulted in 0.865 AUC value. 
 ![Alt text](figs/go_c_plots_min_val_loss_0.3176.png?raw=true "Accuracy and Loss plots")
 
 ### 3. Training CNNs for detection of Caverns and LungCapacityDecrease
 
 All other labels (`LungCapacityDecrease`, `Calcification`, `Pleurisy` and `Caverns`) are specified at CT-level, without  information about the specific lung (left/right/both) having aech label. 
 CNNs were used to detect `LungCapacityDecrease` and `Caverns`.
-In this case, the input for the CNN is composed of projections of two lungs. 
+In this case, the input for the CNN is composed of projections of two lungs, `v1.1` projections were used at this stage. 
 
 Weights of the convolutional layers were initialized with the corresponding weights of the CNN previously trained for "normal"/"abnormal" classification.
 Training process is lauched with [go_d_train_ct_report_binary.py](go_d_train_ct_report_binary.py) script.
 Network for `LungCapacityDecrease` was trained for 50 epochs (validation AUC = 0.832), network for `Caverns` was trained for 120 epochs (validation AUC = 0.809).
+
+![Alt text](figs/go_d_lcd_plots_min_val_loss_0.4834.png "Lung Capacity Decrease")
+![Alt text](figs/go_d_caverns_plots_min_val_loss_0.5083.png "Caverns")
 
 ### 4. Assessing scores for Calcification and Pleurisy
 
@@ -55,4 +59,4 @@ Scores for prediction of `Calcification` were calculated as mean intensity value
 Evaluation on the training subset resulted in 0.719 AUC value. 
 
 Scores for detection of `Pleurisy` were calculated as difference between the volumes of lungs segmented via two different approaches: default and registration-based (see [aux_test_pleurisy.py](aux_test_pleurisy.py)). 
-Evaluation on the development dataset resulted in 0.776 AUC.
+Evaluation on the development (train + val) dataset resulted in 0.776 AUC.
