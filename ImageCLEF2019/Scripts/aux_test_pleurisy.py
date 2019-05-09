@@ -31,8 +31,8 @@ def main():
 
 
 def calc_diffs():
-    segm_dir1 = '/hdd_purple/clef2019_masks/TrainingSet_Masks'
-    segm_dir2 = '/hdd_purple/clef2019_reg/TrainingSet_Masks'
+    segm_dir1 = '/path/to/clef2019_masks/TrainingSet_Masks'
+    segm_dir2 = '/path/to/clef2019_reg/TrainingSet_Masks'
     labels_file = 'metadata/TrainingSet_metaData.csv'
 
     df = pd.read_csv(labels_file)
@@ -67,10 +67,10 @@ def calc_diffs():
 
 
 def calc_diffs_for_test():
-    segm_dir1trn = '/hdd_purple/clef2019_masks/TrainingSet_Masks'
-    segm_dir1tst = '/hdd_purple/clef2019_masks/TestSet_Masks'
-    segm_dir2trn = '/hdd_purple/clef2019_reg/TrainingSet_Masks'
-    segm_dir2tst = '/hdd_purple/clef2019_reg/TestSet_Masks'
+    segm_dir1trn = '/path/to/clef2019_masks/TrainingSet_Masks'
+    segm_dir1tst = '/path/to/clef2019_masks/TestSet_Masks'
+    segm_dir2trn = '/path/to/clef2019_reg/TrainingSet_Masks'
+    segm_dir2tst = '/path/to/clef2019_reg/TestSet_Masks'
 
     labels_file1 = 'metadata/TrainingSet_metaData.csv'
     labels_file2 = 'metadata/TestSet_metaData.csv'
