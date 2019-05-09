@@ -18,7 +18,7 @@ With this study `clef_projections_v1.0` were generated using  lung masks provide
 `v1.1` were generated using the additional masks ([registration-based](https://github.com/skliff13/CompetitionsParticipation/blob/master/ImageCLEF2019/README.md)), 
 and `v1.2` were generated using the default masks and high intensity threshold (+1000 HU) to catch calcifications.
 
-The examples of X, Y and Z projections for left lung of CTR_TRN_001 are shown below. 
+The examples of X, Y and Z projections for left lung of `CTR_TRN_001` are shown below. 
 In the upper lobe a large lesion can be clearly seen.
 
 ![Alt text](figs/CTR_TRN_001_left_x_proj_mean_max_std.png?raw=true "X projection")
