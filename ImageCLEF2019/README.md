@@ -16,11 +16,18 @@ The challenge was dedicated to the analysis of 3D Computed Tomography (CT) image
 ### Running
 
 Prior to running the scripts, the datasets provided by the organizers must be downloaded. 
-Additionally, one should download the addotional version of lungs masks 
-obtained via segmentation-through-registration scheme ([link](https://drive.google.com/file/d/1DKPcSQLZ-Ff7Xp2fSnc46O9cqLM24aV3/view?usp=sharing)).
-For short description of the additional segmentation method see [1]
+Along with the lung masks provided by the organizers [1] in this study an additional lung segmentation was used. 
+For short description of the additional segmentation method see [2]
+The additional lungs masks were obtained via segmentation-through-registration scheme and are available for [download](https://drive.google.com/file/d/1DKPcSQLZ-Ff7Xp2fSnc46O9cqLM24aV3/view?usp=sharing).
+
 
 ### References
 
-[1] Liauchuk, V., Kovalev, V.: ImageCLEF 2017: Supervoxels and co-occurrence for
-tuberculosis CT image classification. In: CLEF2017 Working Notes. CEUR Workshop Proceedings, Dublin, Ireland, CEUR-WS.org <http://ceur-ws.org> (September 11-14 2017) (http://ceur-ws.org/Vol-1866/paper_146.pdf).
+[1] Dicente Cid, Y., Jimenez-del-Toro, O., Depeursinge, A., M¨uller, H.: Efficient and
+fully automatic segmentation of the lungs in CT volumes. In Orcun Goksel,
+Jimenez-del-Toro, O., Foncubierta-Rodriguez, A., M¨uller, H., eds.: Proceedings of
+the VISCERAL Challenge at ISBI. Number 1390 in CEUR Workshop Proceedings
+(Apr 2015) 31–35
+
+[2] Liauchuk, V., Kovalev, V.: ImageCLEF 2017: Supervoxels and co-occurrence for
+tuberculosis CT image classification. In: CLEF2017 Working Notes. CEUR Workshop Proceedings, Dublin, Ireland, CEUR-WS.org <http://ceur-ws.org> (September 11-14 2017) (URL: http://ceur-ws.org/Vol-1866/paper_146.pdf).
