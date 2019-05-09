@@ -60,3 +60,22 @@ Evaluation on the training subset resulted in 0.719 AUC value.
 
 Scores for detection of `Pleurisy` were calculated as difference between the volumes of lungs segmented via two different approaches: default and registration-based (see [aux_test_pleurisy.py](aux_test_pleurisy.py)). 
 Evaluation on the development (train + val) dataset resulted in 0.776 AUC.
+
+### 5. Predicting the Test dataset
+
+For evaluation of all the algorithms on the test CT cases, `CtPredictor3` class was used (see [ct_predictor_3.py](ct_predictor_3.py)). 
+`CtPredictor3` inherits `CtPredictor2` and `CtPredictor` classes which were used for non-final CTR subtask submissions.
+Evaluation on the validation and test datasets is done with [go_e_predict_validation_set.py](go_e_predict_validation_set.py) and [go_f_predict_test_set.py](go_f_predict_test_set.py).
+
+The final evaluation on the validation subset gave the following results:
+```CTR_LeftLungAffected: 0.906173
+CTR_RightLungAffected: 0.956522
+CTR_Calcification: 0.765306
+CTR_Caverns: 0.879167
+CTR_Pleurisy: 0.823529
+CTR_LungCapacityDecrease: 0.855882
+Mean AUC: 0.864430```
+
+
+
+
