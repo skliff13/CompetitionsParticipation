@@ -1,6 +1,7 @@
 # Scripts
 
 The scripts are not very well structurized and contain some auxiliary elements used for multiple try-and-fail runs.
+Running the codes requires step-by-step manual control.
 
 The key steps are described below.
 
@@ -33,4 +34,6 @@ The ground truth information for each lung is given in `CTR_LeftLungAffected` an
 Splitting development data into training and validation subsets is done by [go_b_train_val_split.py](go_b_train_val_split.py).
 Network training process is launched with [go_c_train_lung_binary.py](go_c_train_lung_binary.py).
 
+The network model was trained for over 120 epochs. Accuracy and Loss plots are shown below. "Normal"/"abnormal" prediction on the validation subset resulted in 0.865 AUC value. 
+![Alt text](figs/go_c_plots_min_val_loss_0.3176.png?raw=true "Accuracy and Loss plots")
 
