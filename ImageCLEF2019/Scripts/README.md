@@ -96,9 +96,7 @@ Evaluation on the validation subset demontrated slightly better results for the 
 
 ### Results
 
-The proposed approaches allowed achieving good results in both CTR and SVR subtasks of ImageCLEFtuberculosis 2019 task.
+The proposed approaches allowed achieving good results in both CTR and SVR subtasks of ImageCLEFtuberculosis 2019 task (see UIIP_BioMed).
 
-![Alt text](figs/clef2019_ctr_leaderboard.png "CTR Leaderboard")
+![Alt text](figs/clef2019_ctr_leaderboard.png "CTR Leaderboard")_______
 ![Alt text](figs/clef2019_svr_leaderboard.png "SVR Leaderboard")
-
-
