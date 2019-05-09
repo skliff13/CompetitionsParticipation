@@ -5,7 +5,7 @@ import json
 def main():
     base_job = dict()
     base_job['name'] = 'test'
-    base_job['data_dir'] = '/home/skliff13/work/crdf/CT_Descriptor/data/clef_projections_v1.0'
+    base_job['data_dir'] = '../data/clef_projections_v1.0'
     base_job['mode'] = 'svr'
     base_job['projections'] = 'xyz'
     base_job['model'] = 'VGG8'
