@@ -119,10 +119,10 @@ def process_ct(initial_path, segm_path, row, out_dir, config):
 
 
 def main():
-    initial_dir = '/hdd_purple/clef2019/TrainingSet'
-    segm_dir = '/hdd_purple/clef2019_reg/TrainingSet_Masks'
+    initial_dir = '/path/to/original/images'
+    segm_dir = '/path/to/image/masks'
     labels_file = 'metadata/TrainingSet_metaData.csv'
-    out_dir = '../data/clef_projections_v1.1'
+    out_dir = '../data/clef_projections_v1.X'
 
     config = {'erosion_radius': 10, 'out_size': 256, 'HU_threshold': -1500, 'segm_dir': segm_dir}
     pathlib.Path(out_dir).mkdir(parents=True, exist_ok=True)
