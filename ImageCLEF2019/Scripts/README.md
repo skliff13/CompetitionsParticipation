@@ -103,4 +103,4 @@ The proposed approaches allowed achieving good results in both CTR and SVR subta
 
 ### Acknowledgements
 
-This study was partly supported by the National Institute of Allergy and Infectious Diseases, National Institutes of Health, U.S. Department of Health and Human Services, USA through the CRDF project DAA3-18-64818-1 ”Year 7: Belarus TB Database and TB Portals”. 
+This study was partly supported by the National Institute of Allergy and Infectious Diseases, National Institutes of Health, U.S. Department of Health and Human Services, USA through the [CRDF](https://www.crdfglobal.org/) project DAA3-18-64818-1 ”Year 7: Belarus TB Database and TB Portals”. 
