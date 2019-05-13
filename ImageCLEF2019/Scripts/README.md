@@ -99,7 +99,10 @@ Evaluation on the validation subset demonstrated slightly better results for the
 
 ### Results
 
-The proposed approaches allowed achieving good results in both CTR and SVR subtasks of ImageCLEF Tuberculosis 2019 task (see UIIP_BioMed).
+The proposed approaches allowed achieving good results in both 
+[CTR](https://www.crowdai.org/challenges/imageclef-2019-tuberculosis-ct-report/leaderboards) and 
+[SVR](https://www.crowdai.org/challenges/imageclef-2019-tuberculosis-severity-scoring/leaderboards) 
+subtasks of ImageCLEF Tuberculosis 2019 task (see [UIIP_BioMed](https://www.crowdai.org/participants/uiip_biomed)).
 
 ![Alt text](figs/clef2019_ctr_leaderboard.png "CTR Leaderboard")_________
 ![Alt text](figs/clef2019_svr_leaderboard.png "SVR Leaderboard")
