@@ -27,8 +27,8 @@ In the upper lobe a large TB lesion can be clearly seen.
 
 ### 2. Training Convolutional Neural Net (CNN) for binary lung classification
 
-Here, a CNN is trained to recognize a 2D lung projection image as either healthy ("normal") or affected by TB ("abnormal"). 
-The ground truth information for each lung is given in `CTR_LeftLungAffected` and `CTR_RightLungAffected` metadata fields.
+Here, a CNN is trained to classify a 2D lung projection image as either healthy ("normal") or affected by TB ("abnormal"). 
+The ground truth information for each lung is given in `CTR_LeftLungAffected` and `CTR_RightLungAffected` metadata values.
 Splitting development data into training and validation subsets is done by [go_b_train_val_split.py](go_b_train_val_split.py).
 Network training process is launched with [go_c_train_lung_binary.py](go_c_train_lung_binary.py).
 
@@ -38,9 +38,9 @@ Accuracy and Loss plots are shown below. "Normal"/"abnormal" prediction on the v
 
 ### 3. Training CNNs for detection of Caverns and LungCapacityDecrease
 
-All other labels (`LungCapacityDecrease`, `Calcification`, `Pleurisy` and `Caverns`) are specified at CT-level, without  information about the specific lung (left/right/both) having each label. 
+All other labels (`LungCapacityDecrease`, `Calcification`, `Pleurisy` and `Caverns`) are specified at CT-level, without  information about the specific lung (left/right/both) having each abnormality type. 
 CNNs were used to detect `LungCapacityDecrease` and `Caverns`.
-In this case, the input for the CNN is composed of projections of two lungs, `v1.1` projections were used at this stage. 
+In this case, the input for the CNN is composed of projections of two lungs (network input size was `256x512`), `v1.1` projections were used at this stage. 
 
 Weights of the convolutional layers were initialized with the corresponding weights of the CNN previously trained for "normal"/"abnormal" classification.
 Training process is launched with [go_d_train_ct_report_binary.py](go_d_train_ct_report_binary.py) script.
@@ -48,6 +48,8 @@ Network for `LungCapacityDecrease` was trained for 50 epochs (validation AUC = 0
 
 ![Alt text](figs/go_d_lcd_min_val_loss_0.4834.png "Lung Capacity Decrease")
 ![Alt text](figs/go_d_caverns_min_val_loss_0.5083.png "Caverns")
+
+The [go_d_train_ct_report.py](go_d_train_ct_report.py) script is not used in the final run.
 
 ### 4. Assessing scores for Calcification and Pleurisy
 
