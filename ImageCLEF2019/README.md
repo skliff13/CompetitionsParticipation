@@ -18,7 +18,7 @@ The challenge was dedicated to the analysis of 3D Computed Tomography (CT) image
 Prior to running the scripts, the datasets provided by the organizers must be downloaded. 
 Along with the lung masks provided by the organizers [1] in this study an additional lung segmentation was used. 
 For short description of the additional segmentation method see [2].
-The additional lungs masks were obtained via segmentation-through-registration scheme and are available for [download](https://drive.google.com/open?id=1DKPcSQLZ-Ff7Xp2fSnc46O9cqLM24aV3) (130 MB). Source codes imlpementing the method are [available on Github](https://github.com/skliff13/CT_RegSegm).
+The additional lungs masks were obtained via segmentation-through-registration scheme and are available for [download](https://drive.google.com/open?id=1DKPcSQLZ-Ff7Xp2fSnc46O9cqLM24aV3) (130 MB). Source codes imlpementing the segmentation method are [available on Github](https://github.com/skliff13/CT_RegSegm).
 
 
 ### References
