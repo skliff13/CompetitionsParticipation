@@ -82,15 +82,16 @@ Mean AUC: 0.864430
 
 The CNN for SVR subtask was trained in a way similar to the cases with `LungCapacityDecrease` and `Caverns` (see [go_d_train_svr.py](go_d_train_svr.py)).
 In this case, transfer learning considered transferring weights for all layers, not only convolutional.
-Training for "HIGH"/"LOW" severity classification took 60 epochs.
-The corresponding plots shown below.
+Training for "HIGH"/"LOW" severity classification based solely on CT image projections took 60 epochs.
+The corresponding plots are shown below.
 Evaluation on the validation subset resulted in 0.768 AUC value.
 
 ![Alt text](figs/go_SVR_min_val_loss_0.5596.png?raw=true "Training for HIGH/LOW Severity")
 
 ### 7. TB Severity classification
 
-The final prediction of "HIGH"/"LOW" TB severity was performed using a conventional classifier trained on the CNN outputs and along with the available metadata. Two runs were submitted for the SVR subtask. 
+The final prediction of "HIGH"/"LOW" TB severity was performed using a conventional classifier (Linear Model) trained on the CNN outputs  along with the available metadata. 
+Two runs were submitted for the SVR subtask. 
 The first run used all the available metadata (`md_*` data fields), the second run used only `md_DrugResistance`, `md_HigherEducation`, `md_ExPrisoner` and `md_Alcoholic`.
 See [go_h_train_svr_prediction.py](go_h_train_svr_prediction.py) for details.
 
@@ -98,7 +99,7 @@ Evaluation on the validation subset demonstrated slightly better results for the
 
 ### Results
 
-The proposed approaches allowed achieving good results in both CTR and SVR subtasks of ImageCLEFtuberculosis 2019 task (see UIIP_BioMed).
+The proposed approaches allowed achieving good results in both CTR and SVR subtasks of ImageCLEF Tuberculosis 2019 task (see UIIP_BioMed).
 
 ![Alt text](figs/clef2019_ctr_leaderboard.png "CTR Leaderboard")_________
 ![Alt text](figs/clef2019_svr_leaderboard.png "SVR Leaderboard")
