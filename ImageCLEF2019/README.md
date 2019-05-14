@@ -20,6 +20,19 @@ Along with the lung masks provided by the organizers [1] in this study an additi
 For short description of the additional segmentation method see [2].
 The additional lungs masks were obtained via segmentation-through-registration scheme and are available for [download](https://drive.google.com/open?id=1DKPcSQLZ-Ff7Xp2fSnc46O9cqLM24aV3) (130 MB). Source codes imlpementing the segmentation method are [available on Github](https://github.com/skliff13/CT_RegSegm).
 
+### Results
+
+The proposed approaches allowed achieving good results in both 
+[CTR](https://www.crowdai.org/challenges/imageclef-2019-tuberculosis-ct-report/leaderboards) and 
+[SVR](https://www.crowdai.org/challenges/imageclef-2019-tuberculosis-severity-scoring/leaderboards) 
+subtasks of ImageCLEF Tuberculosis 2019 task (see [UIIP_BioMed](https://www.crowdai.org/participants/uiip_biomed)).
+
+![Alt text](Scripts/figs/clef2019_ctr_leaderboard.png "CTR Leaderboard")_________
+![Alt text](Scripts/figs/clef2019_svr_leaderboard.png "SVR Leaderboard")
+
+### Acknowledgements
+
+This study was partly supported by the National Institute of Allergy and Infectious Diseases, National Institutes of Health, U.S. Department of Health and Human Services, USA through the [CRDF](https://www.crdfglobal.org/) project DAA3-18-64818-1 ”Year 7: Belarus TB Database and TB Portals”. 
 
 ### References
 
