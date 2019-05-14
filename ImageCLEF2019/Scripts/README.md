@@ -106,7 +106,3 @@ subtasks of ImageCLEF Tuberculosis 2019 task (see [UIIP_BioMed](https://www.crow
 
 ![Alt text](figs/clef2019_ctr_leaderboard.png "CTR Leaderboard")_________
 ![Alt text](figs/clef2019_svr_leaderboard.png "SVR Leaderboard")
-
-### Acknowledgements
-
-This study was partly supported by the National Institute of Allergy and Infectious Diseases, National Institutes of Health, U.S. Department of Health and Human Services, USA through the [CRDF](https://www.crdfglobal.org/) project DAA3-18-64818-1 ”Year 7: Belarus TB Database and TB Portals”. 
