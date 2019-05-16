@@ -69,7 +69,8 @@ Evaluation on the validation and test datasets is done with [go_e_predict_valida
 
 The final evaluation on the validation subset gave the following AUC values:
 
-```CTR_LeftLungAffected: 0.906173
+```
+CTR_LeftLungAffected: 0.906173
 CTR_RightLungAffected: 0.956522
 CTR_Calcification: 0.765306
 CTR_Caverns: 0.879167
