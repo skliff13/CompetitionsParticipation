@@ -10,8 +10,12 @@ def svr_table():
 
     for field in fields:
         s = field[3:] + ' & '
-        s += str(sum(df1[field])) + ' & '
-        s += str(sum(df2[field])) + ' \\\\'
+        values = df1[field]
+        values = list(map(int, map(bool, values)))
+        s += str(sum(values)) + ' & '
+        values = df2[field]
+        values = list(map(int, map(bool, values)))
+        s += str(sum(values)) + ' \\\\'
 
         print(s)
 

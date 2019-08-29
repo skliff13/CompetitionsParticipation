@@ -56,10 +56,10 @@ The [go_d_train_ct_report.py](go_d_train_ct_report.py) script is not used in the
 `Calcification` and `Pleurisy` were detected using pretty simple ways. 
 
 Scores for prediction of `Calcification` were calculated as mean intensity value of `v1.2` projections which reflects the number of voxels exceeding 1000 HU threshold (see [aux_explore_calcifications.py](aux_explore_calcifications.py)).
-Evaluation on the training subset resulted in 0.719 AUC value. 
+Evaluation on the development (train + val) dataset resulted in 0.726 AUC value. 
 
 Scores for detection of `Pleurisy` were calculated as difference between the volumes of lungs segmented via two different approaches: default and registration-based (see [aux_test_pleurisy.py](aux_test_pleurisy.py)). 
-Evaluation on the development (train + val) dataset resulted in 0.776 AUC.
+Evaluation on the development dataset resulted in 0.776 AUC.
 
 ### 5. Predicting the Test dataset (CTR subtask)
 
@@ -69,7 +69,8 @@ Evaluation on the validation and test datasets is done with [go_e_predict_valida
 
 The final evaluation on the validation subset gave the following AUC values:
 
-```CTR_LeftLungAffected: 0.906173
+```
+CTR_LeftLungAffected: 0.906173
 CTR_RightLungAffected: 0.956522
 CTR_Calcification: 0.765306
 CTR_Caverns: 0.879167
