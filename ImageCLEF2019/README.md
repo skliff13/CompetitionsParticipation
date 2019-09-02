@@ -39,7 +39,7 @@ This study was partly supported by the National Institute of Allergy and Infecti
 
 [1] Dicente Cid, Y., Jimenez-del-Toro, O., Depeursinge, A., M¨uller, H.: Efficient and
 fully automatic segmentation of the lungs in CT volumes. In Orcun Goksel,
-Jimenez-del-Toro, O., Foncubierta-Rodriguez, A., M¨uller, H., eds.: Proceedings of
+Jimenez-del-Toro, O., Foncubierta-Rodriguez, A., Mueller, H., eds.: Proceedings of
 the VISCERAL Challenge at ISBI. Number 1390 in CEUR Workshop Proceedings
 (Apr 2015) 31–35
 
