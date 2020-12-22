@@ -33,4 +33,4 @@ Information about the final ranking will come soon.
 
 This study was partly supported by the National Institute of Allergy and Infectious Diseases, 
 National Institutes of Health, U.S. Department of Health and Human Services, USA through the 
-[CRDF](https://www.crdfglobal.org/) project DAA9-19-65987-1 ”Year 8: Belarus TB Database and TB Portals”. 
+[CRDF](https://www.crdfglobal.org/) project DAA9-19-65987-1 ”Year 8: Belarus TB Database and TB Portal”. 
