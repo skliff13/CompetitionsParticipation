@@ -11,8 +11,8 @@ The challenge was dedicated to the problem of segmentation of lung lesions cause
 ### Running
 
 The current framework is based on the open-source [MONAI framework](https://github.com/Project-MONAI/tutorials/tree/master/3d_segmentation/challenge_baseline/)
-provided by the challenge organizers. 
-The basic scripts and setting files are stored in [SRC](src) folder.  
+provided by the challenge organizers.
+The basic scripts and setting files are stored in [SRC](src) folder.
 The instructions for running and more detailed descriptions are also there.
 
 Prior to running the scripts, one should

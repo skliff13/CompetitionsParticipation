@@ -10,7 +10,7 @@ at the initialization step (see details below).
 
 ### Structure
 
-* [monai_baseline.py](monai_baseline.py) - the main script used for both training and inferrence
+* [monai_baseline.py](monai_baseline.py) - the main script used for both training and inference
 * [vgg16j.py](vgg16j.py) generates Pytorch versions of VGG-bases 3D segmentation nets which use ImageNet pretrain,
 VGG16J and VGG19J are implemented here
 * [vgg16j_keras.py](vgg16j_keras.py) does the same for Keras 
