@@ -5,7 +5,8 @@ The repository contains scripts used upon participation in COVID-19 Lung CT Lesi
 The challenge was dedicated to the problem of segmentation of lung lesions caused by SARS-CoV-2 infection in 3D CT images.
 
 * Challenge web-page: https://covid-segmentation.grand-challenge.org
-* Current framework source codes: [SRC](src)
+* Current framework source codes [are here](src)
+* Base framework: [MONAI baseline](https://github.com/Project-MONAI/tutorials/tree/master/3d_segmentation/challenge_baseline/)
 
 ### Running
 

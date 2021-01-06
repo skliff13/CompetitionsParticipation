@@ -32,7 +32,7 @@ Thus, the proposed network consists of two parts:
 
 In the current study, VGG16 was used for the downsampling stage, mainly because it was easy to implement. 
 Though, any other 2D network can potentially be used in this manner.
-Second half of UNet reminds letter **"J"**, so the final architecture can be referred as VGG16J.
+Second half of UNet reminds letter "J", so the final architecture can be referred as VGG16J.
 
 Thus, ImageNet-trained weights can be used for initialization of CNN models for 3D medical image segmentation in order to increase the robustness of the final models.
 
