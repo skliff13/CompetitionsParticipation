@@ -6,13 +6,17 @@ The challenge was dedicated to the problem of segmentation of lung lesions cause
 
 * Challenge web-page: https://covid-segmentation.grand-challenge.org/COVID-19-20/
 
-### Structure
-
-_Coming soon..._
-
 ### Running
 
-_Coming soon..._
+
+The current framework is based on the open-source [MONAI framework](https://github.com/Project-MONAI/tutorials/tree/master/3d_segmentation/challenge_baseline/)
+provided by the challenge organizers.
+The basic scripts and setting files are stored in [src](src) folder.  
+The instructions for running and more detailed descriptions are also there.
+Prior to running the scripts, one should
+[download](https://covid-segmentation.grand-challenge.org/Download/#) the challenge data.
+The data should include `Train`, `Validation` and `Test` sets.
+The network training was performed with use of NVIDIA Tesla V100 GPU's with 16 GiB of memory. 
 
 ### Results
 
