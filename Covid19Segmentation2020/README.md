@@ -31,7 +31,7 @@ the proposed approach resulted in 0.6461 mean Dice which corresponded to 8th pos
 
 Information about the final ranking will come soon. 
 
-![Alt text](assets/test_lb_preliminary.png "Test Phase Leaderboard (Preliminary)")
+![Alt text](test_lb_preliminary.png "Test Phase Leaderboard (Preliminary)")
 
 ### Acknowledgements
 
