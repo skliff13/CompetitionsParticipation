@@ -4,15 +4,16 @@ The repository contains scripts used upon participation in COVID-19 Lung CT Lesi
 (COVID-19-20) challenge by [vitali.liauchuk](https://grand-challenge.org/users/vitali.liauchuk/) user.
 The challenge was dedicated to the problem of segmentation of lung lesions caused by SARS-CoV-2 infection in 3D CT images.
 
-* Challenge web-page: https://covid-segmentation.grand-challenge.org/COVID-19-20/
+* Challenge web-page: https://covid-segmentation.grand-challenge.org
+* Current framework source codes: [SRC](src)
 
 ### Running
 
-
 The current framework is based on the open-source [MONAI framework](https://github.com/Project-MONAI/tutorials/tree/master/3d_segmentation/challenge_baseline/)
-provided by the challenge organizers.
-The basic scripts and setting files are stored in [src](src) folder.  
+provided by the challenge organizers. 
+The basic scripts and setting files are stored in [SRC](src) folder.  
 The instructions for running and more detailed descriptions are also there.
+
 Prior to running the scripts, one should
 [download](https://covid-segmentation.grand-challenge.org/Download/#) the challenge data.
 The data should include `Train`, `Validation` and `Test` sets.
