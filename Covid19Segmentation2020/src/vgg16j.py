@@ -130,6 +130,9 @@ class VGG16J(VGGlike):
         Args:
             out_channels: number of output channels. Defaults to 2.
             cut_layers: number of last VGG layers to be ignored. Good values are 1, 8, 15
+            down_conv_z: if True, the convolution kernels in DownBlocks are 3x3x3; otherwise 3x3x1 (slice-wise)
+            up_conv_z2: if True, both convolutional layers in each UpBlock have 3x3x3 kernel size; otherwise there is
+                one layer with 3x3x3 and one layer with 3x3x1
 
         """
         super().__init__()
@@ -154,6 +157,9 @@ class VGG19J(VGGlike):
         Args:
             out_channels: number of output channels. Defaults to 2.
             cut_layers: number of last VGG layers to be ignored. Good values are 1, 10, 19
+            down_conv_z: if True, the convolution kernels in DownBlocks are 3x3x3; otherwise 3x3x1 (slice-wise)
+            up_conv_z2: if True, both convolutional layers in each UpBlock have 3x3x3 kernel size; otherwise there is
+                one layer with 3x3x3 and one layer with 3x3x1
 
         """
         super().__init__()

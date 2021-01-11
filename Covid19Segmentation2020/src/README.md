@@ -14,7 +14,7 @@ at the initialization step (see details below).
 * [vgg16j.py](vgg16j.py) generates Pytorch versions of VGG-bases 3D segmentation nets which use ImageNet pretrain,
 VGG16J and VGG19J are implemented here
 * [vgg16j_keras.py](vgg16j_keras.py) does the same for Keras 
-(not used within this framework, some features might be missing)
+(not used within this framework, may be slightly different)
 * [metadata](metadata) stores two versions (`v1` and `v2`) splitting of challenge `Train` data set into 
 domestic `training` and `validation` subsets; `v0` version is the default split from MONAI baseline 
 * [.env](.env) is used for setting up environment variables which are used by the [monai_baseline.py](monai_baseline.py)

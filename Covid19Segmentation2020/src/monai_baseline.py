@@ -64,7 +64,6 @@ def get_xforms(mode="train", keys=("image", "label")):
         LoadNiftid(keys),
         AddChanneld(keys),
         Orientationd(keys, axcodes="LPS"),
-        # Spacingd(keys, pixdim=(1, 1, 4.0), mode=(
         Spacingd(keys, pixdim=(1.25, 1.25, 5), mode=(
             "bilinear", "nearest")[: len(keys)]),
         ScaleIntensityRanged(keys[0], a_min=-1000.0,
@@ -249,7 +248,6 @@ def train(data_folder=".", model_folder="runs", cache_dir="cache", gpu="cuda"):
         pin_memory=torch.cuda.is_available(),
     )
 
-    # create BasicUNet, DiceLoss and Adam optimizer
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     net = get_net().to(device)
