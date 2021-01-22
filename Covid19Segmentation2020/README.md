@@ -28,10 +28,10 @@ Moderate results were achieved at this stage with the highest result corresponde
 The latest submit resulted in 0.7036 mean Dice and 86th position among 200+ submitted results.
 
 During the [Test phase](https://covid-segmentation.grand-challenge.org/evaluation/challenge-second-phase-new-data/leaderboard/)
-the proposed approach resulted in 0.6461 mean Dice which corresponded to 8th position among 98 submitted results for non-final ranking 
+the proposed approach resulted in 0.6461 mean Dice which corresponded to 8th position among 98 submitted results for 
+[non-final ranking](https://covid-segmentation.grand-challenge.org/evaluation/challenge-second-phase-new-data/leaderboard/) 
 (see [vitali.liauchuk](https://grand-challenge.org/users/vitali.liauchuk/)).
-
-Information about the final ranking will come soon. 
+In the [final ranking](https://covid-segmentation.grand-challenge.org/Final-Ranking/) the method was ranked 6th (6th and 7th places are shared by two users).
 
 ![Alt text](test_lb_preliminary.png "Test Phase Leaderboard (Preliminary)")
 
